@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/* 全体 */
+body {
+  font-family:"Avenir Next",sans-serif;
+  color:#555353;
+  text-align: center;
+  margin:0;
+}
+
+h1{
+    font-size:7rem;
+    font-weight: normal;
+    margin: 50px 0 0 0;
+    line-height: 7rem;
+}
+
+h2{
+    font-size:3rem;
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+h2 span {
+    color :#E04444;
+}
+
+h3 {
+    font-size:2rem;
+    font-weight: normal;
+}
+
+a{
+    color:#555353;
+    text-decoration: none;
+}
+
+nav {
+    border-bottom: 3px solid #E04444;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background-color: #FFFFFF;
+    display: flex;
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin:16px 24px;
+    list-style: none;
+    border-bottom : 3px dotted #707070;
+    font-size:small;
+}
+
+nav ul li img {
+    width: auto;
+    height: 20px;
+}
+
+nav ul li p {
+    margin: 4px;
+}
+
+section {
+    padding-bottom: 100px;
+}
+
+.firstview {
+    text-align: left;
+    margin : 100px 10% 0;
+    padding-bottom : 300px;
+    width: 100%;
+    display: inline-block;
+    background-image:url("../img/top5.png");
+    background-size: 600px;
+    background-position: right 17% bottom;
+    background-repeat: no-repeat;
+}
+
+.firstview p {
+    color : #E04444;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#about {
+    background-color : #E04444;
+    color : #FFFFFF;
+}
+.section-img{
+    width:22%;
+    margin-bottom:50px;
+}
+
+.about-txt {
+    width:56%;
+    margin:20px auto;
+}
+
+.about-icons img{
+    width:32px;
+    margin:2%;
+}
+
+.project-cards {
+    display:flex;
+    width:77%;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.project-card {
+    width:33%;
+    padding:0 35px;
+}
+
+.project-card img{
+    width:80%;
+    padding:22px 10%;
+    border : 2px solid #E04444;
+}
+
+.project-card h3::after {
+	content: '';
+	display: block;
+	transform: translate(100%); /* 位置調整 */
+	width: 33%; /* 下線の幅 */
+	height: 3px; /* 下線の太さ */
+	background-color: #AAADAE; /* 下線の色 */
+    margin-top:16px;
+}
+
+
+.project-links {
+    display: flex;
+}
+.project-link {
+    padding:8px 16px;
+    margin:20px;
+    background-color : #E04444;
+}
+
+.project-links a{
+    color : #FFFFFF;
+}
+
+.contact-cards {
+    display:flex;
+    width:77%;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.contact-card {
+    width:33%;
+    background-color: #F5F4F4;
+    border-bottom: 10px solid #E04444;
+}
+
+.contact-card img{
+    width:14%;
+    margin-top:30px;
+}
+
+.contact-card h3::after{
+    content: '';
+	display: block;
+	transform: translate(50%,300%); /* 位置調整 */
+	width: 50%; /* 下線の幅 */
+	height: 5px; /* 下線の太さ */
+	background-color: #6D6D6F; /* 下線の色 */
+}
+
+.contact-card p{
+    margin:30px 0;
+}
+.contact-card a{
+    color:#E04444;
+    padding:5px;
+    border-bottom: 4px dotted #E04444;
+}
+
+footer {
+    margin-top:300px;
+    padding:30px;
+    background-color: #F5F4F4;
+    font-size:small;
+}
+
+@media screen and (max-width : 767px){
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .firstview {
+        text-align: center;
+        margin: 150px 0 0;
+        padding-bottom: 500px;
+        background-size: 500px;
+        background-position: right bottom;
+    }
+
+    .project-cards {
+        display:block;
+    }
+
+    .project-card {
+        width:100%;
+        padding: 0;
+    }
+
+    .project-links {
+        text-align: center;
+        justify-content: center;
+        margin-bottom:70px;
+    }
+    
+    .contact-cards {
+        display:block;
+    }
+    
+    .contact-card {
+        width:100%;
+        margin-bottom:75px;
+        padding-bottom: 35px;
+    }
+    
+    footer {
+        margin-top:30px;
+        padding:10px;
+    }
+}
