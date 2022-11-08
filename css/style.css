@@ -77,7 +77,7 @@ section {
     padding-bottom : 300px;
     width: 100%;
     display: inline-block;
-    background-image:url("../img/top5.png");
+    /* background-image:url("../img/top5.png"); */
     background-size: 600px;
     background-position: right 17% bottom;
     background-repeat: no-repeat;
