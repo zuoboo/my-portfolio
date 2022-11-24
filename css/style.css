@@ -67,9 +67,9 @@ nav ul li p {
     margin: 4px;
 }
 
-/* section {
-    padding-bottom: 50px;
-} */
+section {
+    width: 100%;
+}
 
 .firstview {
     text-align: left;
@@ -95,7 +95,7 @@ nav ul li p {
     color : #FFFFFF;
 }
 .section-img{
-    width:22%;
+    width:25%;
     margin-bottom:50px;
 }
 
@@ -112,9 +112,16 @@ nav ul li p {
 .project-cards {
     display:flex;
     flex-wrap: wrap;
-    width:85%;
-    /* justify-content: space-between; */
-    margin:auto;
+    width:75%;
+    justify-content: space-between;
+    margin: auto;
+}
+.project-cards::after {
+    display:block;
+    content: "";
+    width:25%;
+    padding:0 35px 30px 35px;
+
 }
 
 .project-card {
